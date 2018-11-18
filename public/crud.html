@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gerenciamento de Alunos</title>
+    <link rel="stylesheet" href="crud.css">
+</head>
+<body>
+
+    <div>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nome</th>
+                    <th>Data de Nascimento</th>
+                    <th>Gênero</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="list-body">
+            </tbody>
+        </table><br>
+        <button id="add">Adicionar</button>
+    </div>
+
+    <div id="register" class="hide">
+        <h1>Cadastro</h1>
+        <form id="form">
+            <input type="hidden" name="id" id="id">
+            <input type="text" name="name" id="name" placeholder="Nome"><br>
+            <input type="date" name="birth" id="birth" placeholder="Data de Nascimento"><br>
+            <select name="genre" id="genre">
+                <option value="">Gênero</option>
+                <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
+            </select><br>
+            <input type="text" name="room_id" id="room_id" placeholder="Sala de aula"><br>
+            <button>Salvar</button>
+        </form>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="crud.js"></script>
+</body>
+</html>
